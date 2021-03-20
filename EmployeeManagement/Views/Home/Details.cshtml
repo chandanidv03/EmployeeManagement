@@ -1,0 +1,82 @@
+﻿@*@model EmployeeManagement.Models.Employee*@
+@model HomeDetailsViewModel
+@{
+   // Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Employee Details";
+}
+@*<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+    </head>
+    <body>*@
+<div class="row justify-content-center m-3">
+        <div class="col-sm-8">
+            <div class="card">
+                <div class="card-header">
+                    <h1>@Model.Employee.Name</h1>
+                </div>
+
+                <div class="card-body text-center">
+                    <img class="card-img-top" src="~/Images/person.png" />
+                    <h4>Employee ID : @Model.Employee.Id</h4>
+                    <h4>Email : @Model.Employee.Email</h4>
+                    <h4>Department : @Model.Employee.Department</h4>
+                </div>
+                <div class="card-footer text-center">                   
+                    <a href="#" class="btn btn-primary">Back</a>
+                    <a href="#" class="btn btn-primary">Edit</a>
+                    <a href="#" class="btn btn-danger">Delete</a>
+                </div>
+            </div>
+        </div>
+    
+</div>
+@*<h1>From ViewModel</h1>
+<h3>@Model.PageTitle</h3>
+<div>
+    Name :@Model.Employee.Name
+</div>
+<div>
+    E-mail :@Model.Employee.Email
+</div>
+<div>
+    Department :@Model.Employee.Department
+</div>
+@section Scripts{ 
+    <script src="~/js/CustomScript.js"></script>
+}*@
+@*<h1>From Strongly Typed View</h1>
+    <h3>@ViewBag.PageTitle</h3>
+    <div>
+        Name :@Model.Name
+    </div>
+    <div>
+        E-mail :@Model.Email
+    </div>
+    <div>
+        Department :@Model.Department
+    </div>*@
+@*<div>
+        Name :@ViewBag.Employee.Name
+    </div>
+    <div>
+        E-mail :@ViewBag.Employee.Email
+    </div>
+    <div>
+        Department :@ViewBag.Employee.Department
+    </div>*@
+@*<h3>@ViewData["PageTitle"]</h3>
+    @{
+        var employee = ViewData["Employee"] as EmployeeManagement.Models.Employee;
+    }
+    <div>
+        Name:@employee.Name
+    </div>
+    <div>
+        E-mail:@employee.Email
+    </div>
+    <div>
+        Department:@employee.Department
+    </div>*@
+@*</body>
+    </html>*@
